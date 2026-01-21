@@ -64,7 +64,7 @@ async function initDB() {
     res.json({ message: "Supprimé" });
   });
 
-  app.listen(process.env.PORT, () =>
-    console.log(`Backend sur http://localhost:${process.env.PORT}`)
+  app.listen(process.env.PORT, '0.0.0.0', () =>
+    console.log(`Backend sur http://0.0.0.0:${process.env.PORT}`)
   );
 })();
