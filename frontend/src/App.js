@@ -9,7 +9,7 @@ function App() {
     level: ""
   });
 
-  const API = "http://13.218.75.255:5000/students";
+  const API = "http://184.72.114.228:5000/students";
 
   const loadStudents = () => {
     fetch(API)
