@@ -9,8 +9,7 @@ function App() {
     level: ""
   });
 
-  const API = "http://184.72.114.228:5000/students";
-
+const API = `${process.env.REACT_APP_API_URL}/students`;  // Remplacement ici : utilise l'env var injectée au build
   const loadStudents = () => {
     fetch(API)
       .then(res => res.json())
