@@ -9,7 +9,8 @@ function App() {
     level: ""
   });
 
-const API = `${process.env.REACT_APP_API_URL}/students`;  // Remplacement ici : utilise l'env var injectée au build
+  const API = "/students"; 
+
   const loadStudents = () => {
     fetch(API)
       .then(res => res.json())
